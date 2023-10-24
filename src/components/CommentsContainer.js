@@ -110,9 +110,9 @@ const commentData = [
 const Comment = ({data}) => {
     const {name,text,replies} = data;
     return ( 
-        <div className='flex shadow-sm bg-gray-100 p-2 rounded-lg'>
+        <div className='flex shadow-sm bg-zinc-900 p-2 rounded-lg'>
             <img 
-            src='/assets/user.png' 
+            src='/assets/commentuser.jpeg' 
             alt='commentlogo' 
             className='w-10 h-10'
             />
@@ -132,7 +132,8 @@ const CommentList = ({comments}) => {
     return comments.map((comment,index) => (
         <div key={index}>
             <Comment data={comment} />
-            <div className='pl-5 border border-l-black ml-5'>
+            <div className='pl-5 border border-l-zinc-700 ml-5'>
+                {/* calling itself -> concept of recursion Recursion */}
                <CommentList comments = {comment.replies} />
             </div>
         </div>

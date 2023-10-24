@@ -80,19 +80,19 @@ const Head = () => {
   };
 
   return (
-    <div className='grid grid-flow-col col-span-12 p-5 m-2 shadow-lg'>
+    <div className='grid grid-flow-col col-span-12 p-5 m-2 shadow-lg sticky top-0 bg-black'>
         <div className='flex col-span-1'>
             <img 
                 onClick= { () => toggleMenuHandler()}
                 src='./assets/Hamburger_icon.svg.png' 
                 alt='Menu' 
-                className='h-5 cursor-pointer'
+                className='h-8 cursor-pointer bg-white'
             />
            <a href='/'>
             <img 
-              src='./assets/youtube-logo.png' 
+              src='./assets/youtube-darkmode.png' 
               alt='logo' 
-              className='h-6 mx-2 cursor-pointer'
+              className='h-8 mx-2 cursor-pointer'
               />
            </a>
         </div>
@@ -101,7 +101,8 @@ const Head = () => {
           <div>           
             <input 
               type='text' 
-              className='px-5 w-1/2 border borger-gray-400 p-1 rounded-l-full'
+              placeholder='Search'
+              className='px-5 w-1/2 border borger-gray-400 p-1 rounded-l-full bg-zinc-800'
               // For Searching in Search Bar
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -109,8 +110,9 @@ const Head = () => {
               onBlur={() => setShowSuggestions(false)}
             />
             <button 
-            className='border border-gray-400 px-5 py-1 bg-gray-100 rounded-r-full'>
-                🔍
+            className='border border-gray-400 px-5 py-1 bg-zinc-700 rounded-r-full'>
+              {/* <img src='/assets/searchicon.jpeg' alt='searchlogo' className=''/> */}
+              🔍
             </button>
           </div>
           {showSuggestions && (
@@ -127,7 +129,7 @@ const Head = () => {
 
         <div className='col-span-1'>
             <img src='./assets/user.png' alt='user-logo' 
-            className='h-6'
+            className='h-8 bg-white rounded-full'
             />
         </div>
     </div>

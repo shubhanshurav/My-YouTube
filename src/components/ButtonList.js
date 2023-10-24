@@ -15,6 +15,8 @@ const ButtonList = () => {
       <Button name="Cooking" />
       <Button name="Cartoons" />
       <Button name="Movies" />
+      <Button name="programming" />
+      <Button name="coding" />
       {/* {
       list.map((item) => (
         <Button key={item.id} item={item} />
