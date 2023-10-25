@@ -30,7 +30,7 @@ const VideoCard = ({info}) => {
 // this is the Higher order funtion that changes the first VideoCard
 export const AdVideoCard = ({info}) => {
   return (
-    <div className='p-1 m-1 border border-gray-900'>
+    <div className='p-1 m-1 border border-red-800'>
        <VideoCard info={info} />
     </div>
   );

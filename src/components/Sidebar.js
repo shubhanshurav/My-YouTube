@@ -66,23 +66,35 @@ const Sidebar = () => {
         </ul>
         <h1 className='pt-3'>Subscriptions</h1>
         <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='flex py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <img src='./assets/gfg.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 GeeksForGeeks
+                <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
             <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <img src='./assets/cwh.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 CodeWithHarry
+                <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
             <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
-                Code Help
+                <img src='./assets/Codehelp.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
+                Code Help - by Babbar
+                <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
             <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <img src='./assets/Jsm.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 JavaScript Mastery
+                <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
             <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <img src='./assets/apnacollege.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 Apna College
+                <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
             <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <img src='./assets/Gs.jpg' alt='gfglogo' className='rounded-full w-7 h-7'/> 
                 Gate Smashers
+                <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
         </ul>
         <h1 className='font-bold pt-3'>Explore</h1>
