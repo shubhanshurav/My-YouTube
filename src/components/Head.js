@@ -1,8 +1,11 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleMenu } from '../utils/appSlice';
 import { YOUTUBE_SEARCH_API } from '../utils/Contants';
 import { cacheResults } from '../utils/searchSlice';
+import {AiOutlineSearch} from 'react-icons/ai';
+import {BiUserCircle} from 'react-icons/bi';
+
 
 const Head = () => {
 
@@ -80,29 +83,29 @@ const Head = () => {
   };
 
   return (
-    <div className='grid grid-flow-col col-span-12 p-5 m-2 shadow-lg sticky top-0 bg-black'>
+    <div className='grid grid-flow-col col-span-12 p-5 shadow-lg sticky top-0 bg-black items-center'>
         <div className='flex col-span-1'>
             <img 
                 onClick= { () => toggleMenuHandler()}
                 src='./assets/Hamburger_icon.svg.png' 
                 alt='Menu' 
-                className='h-8 cursor-pointer bg-white'
+                className='h-7 cursor-pointer bg-white'
             />
            <a href='/'>
             <img 
               src='./assets/youtube-darkmode.png' 
               alt='logo' 
-              className='h-8 mx-2 cursor-pointer'
+              className='h-7 mx-2 cursor-pointer'
               />
            </a>
         </div>
 
         <div className='col-span-10 px-10'>
-          <div>           
+          <div className='flex'>
             <input 
               type='text' 
               placeholder='Search'
-              className='px-5 w-1/2 border borger-gray-400 p-1 rounded-l-full bg-zinc-800'
+              className='px-5 w-1/2 border borger-zinc-600 p-2 rounded-l-full bg-zinc-800'
               // For Searching in Search Bar
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -110,9 +113,11 @@ const Head = () => {
               onBlur={() => setShowSuggestions(false)}
             />
             <button 
-            className='border border-gray-400 px-5 py-1 bg-zinc-700 rounded-r-full'>
+            className='border border-gray-400 px-5 p-2 bg-black rounded-r-full'>
               {/* <img src='/assets/searchicon.jpeg' alt='searchlogo' className=''/> */}
-              🔍
+             <div className='text-2xl'>
+                <AiOutlineSearch />
+             </div>
             </button>
           </div>
           {showSuggestions && (
@@ -127,10 +132,11 @@ const Head = () => {
            </div>)}
         </div>
 
-        <div className='col-span-1'>
-            <img src='./assets/user.png' alt='user-logo' 
+        <div className='col-span-1 text-2xl'>
+            {/* <img src='./assets/user.png' alt='user-logo' 
             className='h-8 bg-white rounded-full'
-            />
+            /> */}
+            <BiUserCircle />
         </div>
     </div>
   )

@@ -1,6 +1,21 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import {BsYoutube, BsCollectionPlay, BsMusicNote, BsNewspaper} from 'react-icons/bs';
+import {SiYoutubestudio, SiYoutubemusic, SiYoutubegaming, SiShortcut} from 'react-icons/si';
+import {TbBrandYoutubeKids} from 'react-icons/tb';
+import {AiFillHome, AiOutlineLike, AiOutlineSetting, AiOutlineTrophy, AiOutlineBulb} from 'react-icons/ai';
+import {RiFolderVideoLine, RiFeedbackLine} from 'react-icons/ri';
+import {MdOutlineVideoLibrary, MdOutlineWatchLater} from 'react-icons/md';
+import {VscHistory} from 'react-icons/vsc';
+import {CgFlag} from 'react-icons/cg';
+import {TfiHelpAlt} from 'react-icons/tfi';
+import {LiaFireAltSolid} from 'react-icons/lia';
+import {HiOutlineShoppingBag} from 'react-icons/hi';
+import {PiFilmSlateBold} from 'react-icons/pi';
+import {CiStreamOn} from 'react-icons/ci';
+import {GiClothes} from 'react-icons/gi';
+import {BiPodcast} from 'react-icons/bi';
 
 const Sidebar = () => {
 
@@ -10,29 +25,172 @@ const Sidebar = () => {
    if(!isMenuOpen) return null;
 
   return (
-    <div className='p-5 shadow-lg w-64'>
-        <ul className='border-b-2 border-zinc-800 pb-2'>
-            <li  className='py-[3px]'><Link to="/">Home</Link></li>
-            <li  className='py-[3px]'>Shorts</li>
-            <li  className='py-[3px]'>Videos</li>
-            <li  className='py-[3px]'>Live</li>
+    <div className='pl-4 shadow-lg w-64 h-screen overflow-y-auto'>
+        <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
+            <li  className='py-[3px] my-3 text-sm text-gray-200'>
+                <Link to="/" className='flex gap-4 items-center'>
+                   <span className='text-xl'>< AiFillHome /></span>
+                   Home
+                </Link>
+            </li>
+            <li  className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< SiShortcut /></span>
+                Shorts
+            </li>
+            <li  className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< BsCollectionPlay /></span>
+                Subscriptions
+            </li>
         </ul>
-        <h1 className='font-bold pt-3'>Subscriptions</h1>
-        <ul className='border-b-2 border-zinc-800 pb-2'>
-            <li className='py-[3px]'>Music</li>
-            <li className='py-[3px]'>Sports</li>
-            <li className='py-[3px]'>Gaming</li>
-            <li className='py-[3px]'>Movies</li>
+        <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
+            <li  className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< MdOutlineVideoLibrary /></span>
+                Library
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< VscHistory /></span>
+                History
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< RiFolderVideoLine /></span>
+                Your videos
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< MdOutlineWatchLater /></span>
+                Watch Later
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< AiOutlineLike /></span>
+                Liked videos
+            </li>
         </ul>
-        <h1 className='font-bold pt-3'>Watch Later </h1>
-        <ul>
-            <li className='py-[3px]'>Music</li>
-            <li className='py-[3px]'>Sports</li>
-            <li className='py-[3px]'>Gaming</li>
-            <li className='py-[3px]'>Movies</li>
+        <h1 className='pt-3'>Subscriptions</h1>
+        <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                GeeksForGeeks
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                CodeWithHarry
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                Code Help
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                JavaScript Mastery
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                Apna College
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                Gate Smashers
+            </li>
         </ul>
+        <h1 className='font-bold pt-3'>Explore</h1>
+        <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< LiaFireAltSolid /></span>
+                Trending
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< HiOutlineShoppingBag /></span>
+                Shopping
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< BsMusicNote /></span>
+                Music
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< PiFilmSlateBold /></span>
+                Films
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'><CiStreamOn /></span>
+                Live
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'><SiYoutubegaming /></span>
+                Gaming
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'><BsNewspaper /></span>
+                News
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'><AiOutlineTrophy /></span>
+                Sport
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'><AiOutlineBulb /></span>
+                Learning
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'><GiClothes /></span>
+                Fashion & Beauty
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'><BiPodcast /></span>
+                Podcasts
+            </li>
+        </ul>
+        <h1 className='font-bold pt-3'>Media from Youtube</h1>
+        <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-2xl text-red-600'><BsYoutube /></span>
+                Youtube Premium
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-2xl text-red-600'><SiYoutubestudio /></span>
+                Youtube Studio
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-2xl text-red-600'><SiYoutubemusic /></span>
+                Youtube Music
+            </li>
+            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-2xl text-red-600'><TbBrandYoutubeKids /></span>
+                Youtube Kids
+            </li>
+        </ul>
+       <div className='border-b-2 border-zinc-800 my-2 pb-4'>
+         <ul>
+            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< AiOutlineSetting /></span>
+                Settings
+            </li>
+            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< CgFlag /></span>
+                Report history
+            </li>
+            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< TfiHelpAlt /></span>
+                Help
+            </li>
+            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+                <span className='text-xl'>< RiFeedbackLine /></span>
+                Send feedback
+            </li>
+         </ul>
+       </div>
+       <div>
+          <div className='flex flex-wrap my-2 pb-4 text-sm text-gray-400'>
+            <p className='pr-[5px] '>Press</p>
+            <p className='pr-[5px] '>About</p>
+            <p className='pr-[5px] '>Copyright</p>
+            <p className='pr-[5px] '>Contact us</p>
+            <p className='pr-[5px] '>Creator</p>
+            <p className='pr-[5px] '>Advertise</p>
+            <p className='pr-[5px] '>Developers</p>
+          </div>
+          <div className='flex flex-wrap my-2 pb-4 text-sm text-gray-400'>
+            <p className='pr-[5px] '>Terms</p>
+            <p className='pr-[5px] '>Privacy</p>
+            <p className='pr-[5px] '>Policy & Safety</p>
+            <p className='pr-[5px] '>How Youtube Works</p>
+            <p className='pr-[5px] '>Test New Feature</p>
+          </div>
+       </div>
     </div>
   )
 }
 
-export default Sidebar
+export default Sidebar;
