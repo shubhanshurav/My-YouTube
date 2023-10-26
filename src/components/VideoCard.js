@@ -9,18 +9,30 @@ const VideoCard = ({info}) => {
     }
     const {snippet, statistics} = info;
     const {title, channelTitle, thumbnails} = snippet;
+    // const formattedViews = formatViews(statistics.viewCount);
+
+    // Function to convert the no. of views into millions, thousands.....
+    const formatViews = (viewCount) => {
+      if (viewCount >= 1000000) {
+        return (viewCount / 1000000).toFixed(1) + 'M views';
+      } else if (viewCount >= 1000) {
+        return (viewCount / 1000).toFixed(1) + 'K views';
+      } else {
+        return viewCount + ' views';
+      }
+    };
 
   return (
-    <div className='p-2 w-[19.5rem] shadow-lg m-auto'>
+    <div className='p-2 lg:w-[20rem] md:w-[25rem] sm:w-[40rem] m-auto shadow-lg'>
         <img 
           src={thumbnails.medium.url} 
           alt='thumbnail' 
-          className='rounded-lg'
+          className='rounded-lg m-auto'
         />
-        <ul>
+        <ul className='m-auto px-5'>
             <li className='font-bold py-2 text-sm'>{title}</li>
             <li>{channelTitle}</li>
-            <li>{statistics.viewCount} views</li>
+            <li>{formatViews(statistics.viewCount)}</li>
         </ul>
     </div>
   );
@@ -30,7 +42,7 @@ const VideoCard = ({info}) => {
 // this is the Higher order funtion that changes the first VideoCard
 export const AdVideoCard = ({info}) => {
   return (
-    <div className='p-1 m-1 border border-red-800'>
+    <div className='border border-red-800'>
        <VideoCard info={info} />
     </div>
   );

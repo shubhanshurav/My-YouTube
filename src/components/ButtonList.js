@@ -5,7 +5,7 @@ import Button from './Button';
 
 const ButtonList = () => {
   return (
-    <div className='flex'>
+    <div className='flex flex-wrap max-w-full overflow-x-auto'>
       <Button name="All" />
       <Button name="Gaming" />
       <Button name="Songs" />
@@ -17,6 +17,8 @@ const ButtonList = () => {
       <Button name="Movies" />
       <Button name="programming" />
       <Button name="coding" />
+      <Button name="Development" />
+      <Button name="Popular" />
       {/* {
       list.map((item) => (
         <Button key={item.id} item={item} />

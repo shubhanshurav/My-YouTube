@@ -12,26 +12,28 @@ const VideoContainer = () => {
   },[]);
 
   const getVideos = async () => {
-    // try{
+    try{
     const data = await fetch(YOUTUBE_VIDEOS_API);
     const json = await data.json();
     setVideos(json.items);
-    // }
-    // catch(error){
-    //   console.error("There is something wrong,please try again!!")
-    // }
+    }
+    catch(error){
+      console.error("There is something wrong,please try again!!")
+    }
   };
 
   return (
-    <div className='flex flex-wrap'>
-      {videos[0] && <AdVideoCard info={videos[0]} />}
-      {
+    <div className=''>
+      <div className='flex flex-wrap p-1 m-auto'>
+       {videos[0] && <AdVideoCard info={videos[0]} />}
+       {
         videos.map((video) =>  (
            <Link key={video.id} to={"/watch?v=" + video.id}>
               <VideoCard info={video} />
            </Link> 
         ))
       }
+      </div>
     </div>
   );
 };

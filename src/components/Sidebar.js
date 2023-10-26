@@ -25,7 +25,7 @@ const Sidebar = () => {
    if(!isMenuOpen) return null;
 
   return (
-    <div className='pl-4 shadow-lg w-64 h-screen overflow-y-auto'>
+    <div className='pl-4 shadow-lg lg:w-64 md:w-48 sm:w-42 h-screen overflow-y-auto'>
         <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
             <li  className='py-[3px] my-3 text-sm text-gray-200'>
                 <Link to="/" className='flex gap-4 items-center'>

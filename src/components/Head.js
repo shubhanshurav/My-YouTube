@@ -103,7 +103,7 @@ const Head = () => {
         </div>
 
         <div className='col-span-10 '>
-          <div className='flex items-center w-[80%] px-10 m-auto'>
+          <div className='flex items-center lg:w-[80%] md:w-[60%] sm:w-[40%] px-10 m-auto'>
             <div className='flex m-auto w-[90%] pr-2'>
               <input 
                 type='text' 
@@ -116,7 +116,7 @@ const Head = () => {
                 onBlur={() => setShowSuggestions(false)}
               />
               <button 
-              className='border border-gray-400 px-5 p-2 bg-black rounded-r-full'>
+              className='border border-gray-400 lg:px-5 md:px-3 sm:px-2 p-2 bg-black rounded-r-full'>
                 {/* <img src='/assets/searchicon.jpeg' alt='searchlogo' className=''/> */}
               <div className='text-2xl'>
                   <AiOutlineSearch />

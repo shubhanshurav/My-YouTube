@@ -5,14 +5,16 @@ import { Outlet } from 'react-router-dom';
 
 const Body = () => {
   return (
-    <div className='flex '>
-      <div className='pl-2'>
+    <div className='flex m-auto col-span-12'>
+      <div className='pl-2 col-span-1'>
         <Sidebar />
       </div>
         {/* isme ya to maincontainer load hoga ya to watchpage load hoga */}
         {/* <MainContainter /> */}
         {/* <WatchPage /> */}
-        <Outlet />
+      <div className='col-span-11'>
+         <Outlet />
+      </div>
     </div>
   )
 }

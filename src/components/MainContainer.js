@@ -4,11 +4,13 @@ import VideoContainer from './VideoContainer'
 
 const MainContainer = () => {
   return (
-    <div className='col-span-11'>
+    <div className=''>
+      <div className=''>
         <ButtonList />
+      </div>
         <VideoContainer />
     </div>
   )
 }
 
-export default MainContainer
+export default MainContainer;
