@@ -23,10 +23,10 @@ const VideoCard = ({info}) => {
     };
 
   return (
-    <div className='p-2 lg:w-[20rem] md:w-[25rem] sm:w-[40rem] m-auto shadow-lg'>
+    <div className='p-2 lg:w-[20rem] md:w-[24rem] sm:w-[30rem] m-auto shadow-lg'>
         <img 
           src={thumbnails.medium.url} 
-          alt='thumbnail' 
+          alt='thumbnail'  
           className='rounded-lg m-auto'
         />
         <ul className='m-auto px-5'>
@@ -42,7 +42,7 @@ const VideoCard = ({info}) => {
 // this is the Higher order funtion that changes the first VideoCard
 export const AdVideoCard = ({info}) => {
   return (
-    <div className='border border-red-800'>
+    <div className='border border-red-800 cursor-pointer'>
        <VideoCard info={info} />
     </div>
   );
