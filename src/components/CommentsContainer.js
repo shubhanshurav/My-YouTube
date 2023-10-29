@@ -132,7 +132,7 @@ const CommentList = ({comments}) => {
     return comments.map((comment,index) => (
         <div key={index}>
             <Comment data={comment} />
-            <div className='pl-5 border border-l-zinc-700 ml-5'>
+            <div className='pl-5 border border-l-zinc-900 ml-5'>
                 {/* calling itself -> concept of recursion Recursion */}
                <CommentList comments = {comment.replies} />
             </div>
