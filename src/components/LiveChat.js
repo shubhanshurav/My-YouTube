@@ -2,7 +2,7 @@ import React,{ useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import ChatMessage from './ChatMessage';
 import { addMessage } from '../utils/chatSlice';
-import { generateRandomName, makeRandomMessage } from '../utils/helper';
+import { generateRandomName, makeRandomSentence } from '../utils/helper';
 
 const LiveChat = () => {
 
@@ -18,7 +18,7 @@ const LiveChat = () => {
         dispatch(
             addMessage({
                 name: generateRandomName(),
-                message: makeRandomMessage(30) + "✌️",
+                message: makeRandomSentence(7) + "✌️",
             })
         );
      },1500)
@@ -28,7 +28,7 @@ const LiveChat = () => {
 
   return (
     <>
-    <div className='w-full h-[500px] p-2 ml-2 border border-white bg-slate-100 rounded-t-lg overflow-y-scroll flex flex-col-reverse'>
+    <div className='w-full h-[500px] p-2 ml-2 border border-white bg-slate-300 rounded-t-lg overflow-y-scroll flex flex-col-reverse'>
         <div>
         {    // Discliamer: Don't use index as Keys
             chatMessages.map((c,i) => ( 

@@ -6,7 +6,7 @@ const ChatMessage = ({name, message}) => {
         <img src='./assets/commentuser.jpeg' alt='user-logo' 
             className='rounded-full h-8 w-8'
         />
-        <span className='font-bold px-2 text-[12px] text-gray-700'>{name}</span>
+        <span className='font-bold px-4 text-[12px] text-gray-700'>{name}</span>
         <span className='text-gray-700 text-[13px]'>{message}</span>
     </div>
   )
