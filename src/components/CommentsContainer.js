@@ -7,43 +7,48 @@ const commentData = [
         replies: [],
     },
     {
-        name:"Shubhanshu Rao",
+        name:"Ramesh",
         text: "Lorem ipsum dolar sit amet.",
         replies: [
             {
-                name:"Shubhanshu Rao",
+                name:"Priyanshu",
                 text: "Lorem ipsum dolar sit amet.",
                 replies: [
                     {
-                        name:"Shubhanshu Rao",
+                        name:"Ishu",
                         text: "Lorem ipsum dolar sit amet.",
                         replies: [],
                     },
                     {
-                        name:"Shubhanshu Rao",
+                        name:"Kamlesh",
+                        text: "Lorem ipsum dolar sit amet.",
+                        replies: [],
+                    },
+                ],
+            },
+        ],
+    },
+    {
+        name:"Rao Shahb",
+        text: "Lorem ipsum dolar sit amet.",
+        replies: [
+            {
+                name:"Joe Deon",
+                text: "Lorem ipsum dolar sit amet.",
+                replies: [
+                    {
+                        name:"Kohli",
                         text: "Lorem ipsum dolar sit amet.",
                         replies: [
                             {
-                                name:"Shubhanshu Rao",
+                                name:"Samson",
                                 text: "Lorem ipsum dolar sit amet.",
-                                replies: [
-                                    {
-                                        name:"Shubhanshu Rao",
-                                        text: "Lorem ipsum dolar sit amet.",
-                                        replies: [
-                                            {
-                                                name:"Shubhanshu Rao",
-                                                text: "Lorem ipsum dolar sit amet.",
-                                                replies: [],
-                                            },
-                                            {
-                                                name:"Shubhanshu Rao",
-                                                text: "Lorem ipsum dolar sit amet.",
-                                                replies: [],
-                                            },
-                                        ],
-                                    },
-                                ],
+                                replies: [],
+                            },
+                            {
+                                name:"Mahi",
+                                text: "Lorem ipsum dolar sit amet.",
+                                replies: [],
                             },
                         ],
                     },
@@ -52,20 +57,15 @@ const commentData = [
         ],
     },
     {
-        name:"Shubhanshu Rao",
-        text: "Lorem ipsum dolar sit amet.",
-        replies: [],
-    },
-    {
-        name:"Shubhanshu Rao",
+        name:"Rahit Sharma",
         text: "Lorem ipsum dolar sit amet.",
         replies: [
             {
-                name:"Shubhanshu Rao",
+                name:"Somesh Rao",
                 text: "Lorem ipsum dolar sit amet.",
                 replies: [
                     {
-                        name:"Shubhanshu Rao",
+                        name:"Riyansh Rao",
                         text: "Lorem ipsum dolar sit amet.",
                         replies: [],
                     },
@@ -79,25 +79,25 @@ const commentData = [
         ],
     },
     {
-        name:"Shubhanshu Rao",
+        name:"Bumraha",
         text: "Lorem ipsum dolar sit amet.",
         replies: [],
     },
     {
-        name:"Shubhanshu Rao",
+        name:"Kapil Dev",
         text: "Lorem ipsum dolar sit amet.",
         replies: [
             {
-                name:"Shubhanshu Rao",
+                name:"Sachin",
                 text: "Lorem ipsum dolar sit amet.",
                 replies: [],
             },
             {
-                name:"Shubhanshu Rao",
+                name:"Yuvraj Singh",
                 text: "Lorem ipsum dolar sit amet.",
                 replies: [
                     {
-                        name:"Shubhanshu Rao",
+                        name:"Harbhajan",
                         text: "Lorem ipsum dolar sit amet.",
                         replies: [],
                     },

@@ -27,71 +27,71 @@ const Sidebar = () => {
   return (
     <div className='pl-4 shadow-lg lg:w-64 md:w-48 sm:w-42 h-screen overflow-y-auto'>
         <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
-            <li  className='py-[3px] my-3 text-sm text-gray-200'>
+            <li  className='text-sm text-gray-200 hover:bg-zinc-900 py-3 px-2'>
                 <Link to="/" className='flex gap-4 items-center'>
                    <span className='text-xl'>< AiFillHome /></span>
                    Home
                 </Link>
             </li>
-            <li  className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li  className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< SiShortcut /></span>
                 Shorts
             </li>
-            <li  className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li  className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< BsCollectionPlay /></span>
                 Subscriptions
             </li>
         </ul>
         <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
-            <li  className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li  className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< MdOutlineVideoLibrary /></span>
                 Library
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< VscHistory /></span>
                 History
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< RiFolderVideoLine /></span>
                 Your videos
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< MdOutlineWatchLater /></span>
                 Watch Later
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< AiOutlineLike /></span>
                 Liked videos
             </li>
         </ul>
         <h1 className='pt-3'>Subscriptions</h1>
         <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
-            <li className='flex py-[3px] my-3 text-sm text-gray-200 gap-4 items-center'>
+            <li className='flex text-sm text-gray-200 gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <img src='./assets/gfg.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 GeeksForGeeks
                 <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
             <img src='./assets/cwh.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 CodeWithHarry
                 <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <img src='./assets/Codehelp.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 Code Help - by Babbar
                 <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <img src='./assets/Jsm.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 JavaScript Mastery
                 <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <img src='./assets/apnacollege.jpg' alt='gfglogo' className='rounded-full w-7 h-7' /> 
                 Apna College
                 <span className='text-red-500 text-xl'><CiStreamOn /></span>
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <img src='./assets/Gs.jpg' alt='gfglogo' className='rounded-full w-7 h-7'/> 
                 Gate Smashers
                 <span className='text-red-500 text-xl'><CiStreamOn /></span>
@@ -99,92 +99,92 @@ const Sidebar = () => {
         </ul>
         <h1 className='font-bold pt-3'>Explore</h1>
         <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< LiaFireAltSolid /></span>
                 Trending
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< HiOutlineShoppingBag /></span>
                 Shopping
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< BsMusicNote /></span>
                 Music
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< PiFilmSlateBold /></span>
                 Films
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'><CiStreamOn /></span>
                 Live
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'><SiYoutubegaming /></span>
                 Gaming
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'><BsNewspaper /></span>
                 News
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'><AiOutlineTrophy /></span>
                 Sport
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'><AiOutlineBulb /></span>
                 Learning
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'><GiClothes /></span>
                 Fashion & Beauty
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'><BiPodcast /></span>
                 Podcasts
             </li>
         </ul>
         <h1 className='font-bold pt-3'>Media from Youtube</h1>
         <ul className='border-b-2 border-zinc-800 my-2 pb-4'>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
-                <span className='text-2xl text-red-600'><BsYoutube /></span>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
+                <span className='text-2xl text-red-700'><BsYoutube /></span>
                 Youtube Premium
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
-                <span className='text-2xl text-red-600'><SiYoutubestudio /></span>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
+                <span className='text-2xl text-red-700'><SiYoutubestudio /></span>
                 Youtube Studio
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
-                <span className='text-2xl text-red-600'><SiYoutubemusic /></span>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
+                <span className='text-2xl text-red-700'><SiYoutubemusic /></span>
                 Youtube Music
             </li>
-            <li className='py-[3px] my-3 text-sm text-gray-200 flex gap-4 items-center'>
-                <span className='text-2xl text-red-600'><TbBrandYoutubeKids /></span>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
+                <span className='text-2xl text-red-700'><TbBrandYoutubeKids /></span>
                 Youtube Kids
             </li>
         </ul>
        <div className='border-b-2 border-zinc-800 my-2 pb-4'>
          <ul>
-            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< AiOutlineSetting /></span>
                 Settings
             </li>
-            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< CgFlag /></span>
                 Report history
             </li>
-            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< TfiHelpAlt /></span>
                 Help
             </li>
-            <li className='pt-3 my-3 text-sm text-gray-200 flex gap-4 items-center'>
+            <li className='text-sm text-gray-200 flex gap-4 items-center cursor-pointer hover:bg-zinc-900 py-3 px-2'>
                 <span className='text-xl'>< RiFeedbackLine /></span>
                 Send feedback
             </li>
          </ul>
        </div>
        <div>
-          <div className='flex flex-wrap my-2 pb-4 text-sm text-gray-400'>
+          {/* <div className='flex flex-wrap my-2 pb-4 text-sm text-gray-400'>
             <p className='pr-[5px] '>Press</p>
             <p className='pr-[5px] '>About</p>
             <p className='pr-[5px] '>Copyright</p>
@@ -199,6 +199,10 @@ const Sidebar = () => {
             <p className='pr-[5px] '>Policy & Safety</p>
             <p className='pr-[5px] '>How Youtube Works</p>
             <p className='pr-[5px] '>Test New Feature</p>
+          </div> */}
+
+          <div className='py-5 text-sm px-1 text-center font-light '>
+            <p>Developed by <span className='text-rose-600 font-bold'>Shubhanshu Rao✌️</span></p>
           </div>
        </div>
     </div>
