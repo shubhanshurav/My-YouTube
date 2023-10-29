@@ -4,6 +4,7 @@ import { closeMenu } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
 import CommentsContainer from "./CommentsContainer";
 import LiveChat from "./LiveChat";
+import VideoContainer from "./VideoContainer";
 
 const WatchPage = () => {
   const [searchParams] = useSearchParams(); //HW -> Read more about useSearchParams
@@ -14,8 +15,8 @@ const WatchPage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full">
-      <div className="flex px-5 w-full">
+    <div className="flex flex-row w-[100%]">
+      <div className="flex flex-col px-2 w-[65%]">
         <div> 
           <iframe
             width="800"
@@ -28,13 +29,18 @@ const WatchPage = () => {
           >         
           </iframe>
         </div>
-        <div className="w-full">
-          <LiveChat />
+        <div className="w-full h-screen overflow-y-auto">
+           <CommentsContainer />
         </div>
-    </div> 
-
-
-    <CommentsContainer />
+      </div>
+      <div className="w-[33%]">
+        <div>
+          {/* <LiveChat /> */}
+        </div>
+        <div className="h-screen overflow-y-auto">
+          <VideoContainer />
+        </div>
+      </div>
    </div>
   );
 };

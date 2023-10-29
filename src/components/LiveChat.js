@@ -28,7 +28,7 @@ const LiveChat = () => {
 
   return (
     <>
-    <div className='w-full h-[500px] p-2 ml-2 border border-white bg-slate-300 rounded-t-lg overflow-y-scroll flex flex-col-reverse'>
+    <div className='w-full h-[480px] p-2 ml-2 border border-white bg-slate-300 rounded-t-lg overflow-y-scroll flex flex-col-reverse'>
         <div>
         {    // Discliamer: Don't use index as Keys
             chatMessages.map((c,i) => ( 
