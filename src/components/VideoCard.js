@@ -12,7 +12,7 @@ const VideoCard = ({info}) => {
     // const formattedViews = formatViews(statistics.viewCount);
 
     // Function to convert the no. of views into millions, thousands.....
-    const formatViews = (viewCount) => {
+   const formatViews = (viewCount) => {
       if (viewCount >= 1000000) {
         return (viewCount / 1000000).toFixed(1) + 'M views';
       } else if (viewCount >= 1000) {

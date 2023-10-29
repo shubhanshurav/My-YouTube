@@ -35,7 +35,7 @@ const WatchPage = () => {
       </div>
       <div className="w-[33%]">
         <div>
-          {/* <LiveChat /> */}
+          <LiveChat />
         </div>
         <div className="h-screen overflow-y-auto">
           <VideoContainer />
