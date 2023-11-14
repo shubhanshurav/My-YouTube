@@ -48,7 +48,7 @@ const WatchPage = () => {
                 <div className="flex px-2 md:px-0">
                   <div className="md:flex hidden py-2 px-2 border rounded-full">
                     <button className="text-sm font-bold px-2 border-r">👍 1.8k</button>
-                    <button classNam e="text-sm font-bold px-1">👎</button>
+                    <button className="text-sm font-bold px-1">👎</button>
                   </div>
                   <button className="px-4  hidden md:block py-2 text-sm font-bold rounded-full border mx-3">Share</button>
                   <button className="border px-4 text-sm font-bold py-1 md:py-2 rounded-full">Download</button>
