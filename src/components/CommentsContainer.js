@@ -143,7 +143,13 @@ const CommentList = ({comments}) => {
 const CommentsContainer = () => {
   return (
     <div className='m-5 p-2'>
-        <h1 className='text-2xl font-bold'>Comments:</h1>
+        <div className='sticky top-0 bg-black'>
+            <h1 className='text-xl font-bold '>Comments:</h1>
+            <div className='flex items-center py-2'>
+            <img src="./assets/user.png" alt="channelLogo" className="w-10 h-10 bg-white rounded-full" />
+            <p className='text-sm font-light px-2'>Add a comment...</p>
+            </div>
+        </div>
         <CommentList comments={commentData} />
     </div>
   )

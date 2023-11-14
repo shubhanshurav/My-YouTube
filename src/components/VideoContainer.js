@@ -16,6 +16,7 @@ const VideoContainer = () => {
     const data = await fetch(YOUTUBE_VIDEOS_API);
     const json = await data.json();
     setVideos(json.items);
+    // console.log(json.items);
     }
     catch(error){
       console.error("There is something wrong,please try again!!")
@@ -28,7 +29,7 @@ const VideoContainer = () => {
        {videos[0] && <AdVideoCard info={videos[42]} />}
        {
         videos.map((video) =>  (
-           <Link key={video.id} to={"/watch?v=" + video.id}>
+           <Link key={video.id} to={"/watch?v=" + video.id +"&title=" + video.snippet.localized.title + "&channelTitle=" + video.snippet.channelTitle}>
               <VideoCard info={video} />
            </Link> 
         ))
