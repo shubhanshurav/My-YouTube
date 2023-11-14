@@ -4,7 +4,7 @@ import { toggleMenu } from '../utils/appSlice';
 import { YOUTUBE_SEARCH_API } from '../utils/Contants';
 import { cacheResults } from '../utils/searchSlice';
 import {AiOutlineSearch} from 'react-icons/ai';
-import {BiUserCircle, BiVideoPlus} from 'react-icons/bi';
+import {BiVideoPlus} from 'react-icons/bi';
 import {BsMic} from 'react-icons/bs';
 import {IoMdNotificationsOutline} from 'react-icons/io';
 
@@ -90,7 +90,7 @@ const Head = () => {
 
   return (
     <div className='grid grid-flow-col col-span-12 p-5 shadow-lg sticky top-0 bg-black items-center'>
-        <div className='flex col-span-1'>
+        <div className='flex col-span-2 md:col-span-1'>
             <img 
                 onClick= { () => toggleMenuHandler()}
                 src='./assets/Hamburger_icon.svg.png' 
@@ -101,14 +101,14 @@ const Head = () => {
             <img 
               src='./assets/youtube-darkmode.png' 
               alt='logo' 
-              className='h-7 mx-2 cursor-pointer w-full'
+              className='h-7 mx-2 cursor-pointer'
               />
            </a>
         </div>
 
-        <div className='lg:col-span-10 md:col-span-8 sm:col-span-3'>
-          <div className='flex items-center lg:w-[80%] md:w-[60%] sm:w-[40%] px-10 m-auto'>
-            <div className='flex m-auto w-[90%] pr-2'>
+        <div className='md:col-span-8'>
+          <div className='flex items-center w-fit md:w-[80%] px-4 md:px-10 m-auto'>
+            <div className='flex m-auto w-[90%] pr-0 md:pr-2'>
               <input 
                 type='text' 
                 placeholder='Search'
@@ -120,14 +120,14 @@ const Head = () => {
                 onBlur={() => setShowSuggestions(false)}
               />
               <button 
-              className='border border-gray-400 lg:px-5 md:px-3 sm:px-2 p-2 bg-black rounded-r-full'>
+              className='border border-gray-400 px-2 md:px-3 p-2 bg-black rounded-r-full'>
                 {/* <img src='/assets/searchicon.jpeg' alt='searchlogo' className=''/> */}
               <div className='text-2xl'>
                   <AiOutlineSearch />
               </div>
               </button>
             </div>
-            <div className='p-3 rounded-full bg-zinc-700 text-xl m-auto'>
+            <div className='p-3 rounded-full bg-zinc-700 text-xl m-auto hidden md:flex'>
               <BsMic />
             </div>
           </div>
@@ -144,7 +144,7 @@ const Head = () => {
         </div>
 
         <div className='flex items-center gap-5 col-span-1 '>
-          <div className='flex text-2xl gap-5 cursor-pointer'>
+          <div className='md:flex text-2xl gap-5 cursor-pointer hidden'>
             <BiVideoPlus />
             <IoMdNotificationsOutline />
           </div>

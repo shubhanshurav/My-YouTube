@@ -23,7 +23,7 @@ const VideoContainer = () => {
   };
 
   return (
-    <div className=''>
+    <div className='py-3'>
       <div className='flex flex-wrap p-1 m-auto px-4'>
        {videos[0] && <AdVideoCard info={videos[42]} />}
        {

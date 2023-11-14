@@ -23,15 +23,15 @@ const VideoCard = ({info}) => {
     };
 
   return (
-    <div className='lg:w-[19rem] md:w-[24rem] sm:w-[30rem] m-auto shadow-lg'>
+    <div className='w-[24rem] md:w-[19rem] m-auto shadow-lg'>
         <img 
           src={thumbnails.medium.url} 
           alt='thumbnail'  
-          className='rounded-lg m-auto'
+          className='rounded-lg w-full md:w-auto p-2 m-auto'
         />
-        <ul className='m-auto px-5'>
+        <ul className='m-auto px-3 md:px-5 pb-2'>
             <li className='font-bold py-2 text-sm'>{title}</li>
-            <li>{channelTitle}</li>
+            <li className='px-'>{channelTitle}</li>
             <li>{formatViews(statistics.viewCount)}</li>
         </ul>
     </div>

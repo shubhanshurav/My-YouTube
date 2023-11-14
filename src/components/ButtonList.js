@@ -5,7 +5,7 @@ import Button from './Button';
 
 const ButtonList = () => {
   return (
-    <div className='flex flex-wrap'>
+    <div className='flex overflow-x-scroll w-[22rem] md:w-[60rem] m-auto'>
       <Button name="All" />
       <Button name="Gaming" />
       <Button name="Songs" />
