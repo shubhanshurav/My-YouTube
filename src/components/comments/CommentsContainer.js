@@ -109,7 +109,7 @@ const commentData = [
 
 const Comment = ({data}) => {
     const {name,text,replies} = data;
-    return ( 
+    return (
         <div className='flex shadow-sm bg-zinc-900 p-2 rounded-lg'>
             <img 
             src='/assets/commentuser.jpeg' 

@@ -1,9 +1,9 @@
 import { Provider } from 'react-redux';
 import Body from './components/Body';
 import Head from './components/Head';
-import store from './utils/Store';
+import store from './redux/store/Store';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import WatchPage from './components/WatchPage';
+import WatchPage from './components/pages/WatchPage';
 import MainContainer from './components/MainContainer';
  
 // if the path is "/" than Body component rendered  after the the Head Component->[RouterProvider] 
