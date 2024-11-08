@@ -4,7 +4,6 @@ import VideoCard, { AdVideoCard } from "./VideoCard";
 import { Link } from "react-router-dom";
 
 const YOUTUBE_VIDEOS_API = process.env.REACT_APP_YOUTUBE_VIDEOS_API;
-console.log(YOUTUBE_VIDEOS_API)
 
 const VideoContainer = () => {
   const [videos, setVideos] = useState([]);

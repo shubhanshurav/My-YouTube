@@ -9,7 +9,6 @@ import { BiVideoPlus } from "react-icons/bi";
 import { IoMdNotificationsOutline } from "react-icons/io";
 
 const YOUTUBE_SEARCH_API = process.env.REACT_APP_YOUTUBE_SEARCH_API;
-console.log(YOUTUBE_SEARCH_API);
 
 const Head = () => {
   // For Seraching

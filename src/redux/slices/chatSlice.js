@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 // import { LIVE_CHAT_COUNT } from "../../utils/Contants";
 
 const LIVE_CHAT_COUNT = process.env.REACT_APP_LIVE_CHAT_COUNT;
-console.log(LIVE_CHAT_COUNT)
 
 const chatSlice = createSlice({
   name: "chat",
